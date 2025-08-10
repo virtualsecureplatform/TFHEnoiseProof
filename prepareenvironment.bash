@@ -5,3 +5,5 @@ sudo apt install -y apptainer
 sudo singularity build Isabella.sif docker://makarius/isabelle:Isabelle2025
 wget https://www.isa-afp.org/release/afp-current.tar.gz
 tar -xvf afp-current.tar.gz
+rm afp-current.tar.gz
+mv afp-*/ afp-current
