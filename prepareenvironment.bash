@@ -1,8 +1,6 @@
 #!/bin/bash
-sudo add-apt-repository -y ppa:apptainer/ppa
-sudo apt update
-sudo apt install -y apptainer libarchive-tools
-sudo singularity build Isabella.sif docker://makarius/isabelle:Isabelle2025
+wget https://isabelle.in.tum.de/dist/Isabelle2025_linux.tar.gz
+tar -xvf Isabelle2025.tar.gz
 wget https://www.isa-afp.org/release/afp-current.tar.gz
 bsdtar -xvf afp-current.tar.gz
 rm afp-current.tar.gz
